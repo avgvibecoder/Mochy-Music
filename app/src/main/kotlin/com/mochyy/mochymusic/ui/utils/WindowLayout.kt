@@ -40,7 +40,7 @@ fun isLandscapeLayout(): Boolean = isWideLayout() && isLandscapeWindow() && !isT
 object WindowTurning {
     private class Hold(val orientation: Int)
 
-    private var base = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+    private var base = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
     private val holds = mutableListOf<Hold>()
 
     // Experimental > Unlock landscape; off keeps the whole app upright whichever way the phone is held
